@@ -27,7 +27,7 @@ for i in range(len(data)):
 
 # Develop a function that creates a new list of pokemon based on the type the user searched for. If no pokemon was found of that type inform the user
 
-def type():
+""" def type():
     typeask = input("Enter a pokemon type: ").title()
     typelist = []
     for i in range(len(data)):
@@ -36,7 +36,7 @@ def type():
     if len(typelist) == 0:
         print("There is no pokemon that has this type...")
     print(typelist)
-type()
+type() """
 
 
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
