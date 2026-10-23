@@ -43,15 +43,15 @@ type() """
 
 def name():
     match = []
-    search = input("Search For A Pokemon: ").lower()
+    search = input("Search For A Pokemon: ").title()
     for i in range(len(data)):
-        if search in data[i]['name']:
+        if search in data[i]['name']['english']:
             match.append(data[i]['name']['english'])
-            print(match)
     if len(match) == 0:
         print("No pokemon found")
+    else:
+        print(match)
 name() 
-
 
 #Based on user input, show all moves that a pokemon could learn based on their type. For example, if Charizard is fire/fyling, show all fire and flying moves. HINT import the moves.json file too!
 
