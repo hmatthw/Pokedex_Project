@@ -63,5 +63,6 @@ def abilties():
     for i in range(len(data)):
         if search == data[i]['name']['english']:
             for i in range(len(move)):
+                if move[i]["type"] == search[data][i]["type"]:
 
 abilities()
