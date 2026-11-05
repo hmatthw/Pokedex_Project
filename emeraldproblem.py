@@ -4,7 +4,7 @@ def emerald(N, W):
     list = []
     for i in range(N):
         if W[i] % 2 == 0:
-            x = sum(W[i], x)
+            x = W[i] + x
         if W[i] % 2 != 0:
             list.append(x)
             x = 0
