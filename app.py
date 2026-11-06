@@ -55,18 +55,18 @@ name()  """
 
 #Based on user input, show all moves that a pokemon could learn based on their type. For example, if Charizard is fire/fyling, show all fire and flying moves. HINT import the moves.json file too!
 
-moves = open('./moves.json', encoding="utf8")
-move = json.load(moves)
+# moves = open('./moves.json', encoding="utf8")
+# move = json.load(moves)
 
-def abilities():
-    possible = []
-    search = input("Enter a pokemon (In English): ").title()
-    for i in range(len(data)):
-        if search == data[i]['name']['english']:
-            match = i
-            for i in range(len(move)):
-                # print(f"{move[i]["type"]} , {data[i]["type"]}")
-                if move[i]["type"] in data[match]['type']:
-                    possible.append(move[i]["ename"])
-    print(f"{search} can do the following moves: {possible}")
-abilities()
+# def abilities():
+#     possible = []
+#     search = input("Enter a pokemon (In English): ").title()
+#     for i in range(len(data)):
+#         if search == data[i]['name']['english']:
+#             match = i
+#             for i in range(len(move)):
+#                 # print(f"{move[i]["type"]} , {data[i]["type"]}")
+#                 if move[i]["type"] in data[match]['type']:
+#                     possible.append(move[i]["ename"])
+#     print(f"{search} can do the following moves: {possible}")
+# abilities()

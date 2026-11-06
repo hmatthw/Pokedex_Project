@@ -1,4 +1,4 @@
-import math
+""" import math
 def emerald(N, W):
     x = 0
     list = []
@@ -10,4 +10,4 @@ def emerald(N, W):
             x = 0
     list.append(x)
     print(max(list))
-emerald(13, [2, 3, 4, 4, 5, 6, 1, 2, 2, 2, 1, 8, 2])
+emerald(13, [2, 3, 4, 4, 5, 6, 1, 2, 2, 2, 1, 8, 2]) """
