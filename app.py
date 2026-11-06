@@ -12,7 +12,7 @@ data = json.load(pokedex)
 
 # Add a language choice feature and print the pokemons name based on the user input
 
-""" choose = input("Which language would you like to print? ENG / JAP / CHI / FRE ").lower()
+choose = input("Which language would you like to print? ENG / JAP / CHI / FRE ").lower()
 for i in range(len(data)):
     if choose == "eng":
         print(data[i]['name']['english'])
@@ -23,7 +23,7 @@ for i in range(len(data)):
     elif choose == "fre":
         print(data[i]['name']['french'])
     else:
-        print("Unaccepted language") """
+        print("Unaccepted language")
 
 # Develop a function that creates a new list of pokemon based on the type the user searched for. If no pokemon was found of that type inform the user
 
@@ -36,8 +36,8 @@ for i in range(len(data)):
     if len(typelist) == 0:
         print("There is no pokemon that has this type...")
     print(typelist)
-type() """
-
+type()
+ """
 
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
 
@@ -55,18 +55,18 @@ name()  """
 
 #Based on user input, show all moves that a pokemon could learn based on their type. For example, if Charizard is fire/fyling, show all fire and flying moves. HINT import the moves.json file too!
 
-# moves = open('./moves.json', encoding="utf8")
-# move = json.load(moves)
+moves = open('./moves.json', encoding="utf8")
+move = json.load(moves)
 
-# def abilities():
-#     possible = []
-#     search = input("Enter a pokemon (In English): ").title()
-#     for i in range(len(data)):
-#         if search == data[i]['name']['english']:
-#             match = i
-#             for i in range(len(move)):
-#                 # print(f"{move[i]["type"]} , {data[i]["type"]}")
-#                 if move[i]["type"] in data[match]['type']:
-#                     possible.append(move[i]["ename"])
-#     print(f"{search} can do the following moves: {possible}")
-# abilities()
+""" def abilities():
+    possible = []
+    search = input("Enter a pokemon (In English): ").title()
+    for i in range(len(data)):
+        if search == data[i]['name']['english']:
+            match = i
+            for i in range(len(move)):
+                # print(f"{move[i]["type"]} , {data[i]["type"]}")
+                if move[i]["type"] in data[match]['type']:
+                    possible.append(move[i]["ename"])
+    print(f"{search} can do the following moves: {possible}")
+abilities() """
