@@ -66,6 +66,6 @@ def abilities():
             for i in range(len(move)):
                 #(debugging) print(f"{move[i]["type"]} , {data[i]["type"]}")
                 if move[i]["type"] in data[i]['type']:
-                    possible.append(move[i]["type"])
+                    possible.append(move[i]["ename"])
     print(f"{search} can do the following moves: {possible}")
 abilities()
