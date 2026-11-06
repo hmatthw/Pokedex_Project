@@ -63,9 +63,10 @@ def abilities():
     search = input("Enter a pokemon (In English): ").title()
     for i in range(len(data)):
         if search == data[i]['name']['english']:
+            match = i
             for i in range(len(move)):
-                #(debugging) print(f"{move[i]["type"]} , {data[i]["type"]}")
-                if move[i]["type"] in data[i]['type']:
+                # print(f"{move[i]["type"]} , {data[i]["type"]}")
+                if move[i]["type"] in data[match]['type']:
                     possible.append(move[i]["ename"])
     print(f"{search} can do the following moves: {possible}")
 abilities()
