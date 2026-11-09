@@ -58,7 +58,7 @@ name()  """
 moves = open('./moves.json', encoding="utf8")
 move = json.load(moves)
 
-def abilities():
+""" def abilities():
     possible = []
     search = input("Enter a pokemon (In English): ").title()
     for i in range(len(data)):
@@ -69,4 +69,4 @@ def abilities():
                 if move[i]["type"] in data[match]['type']:
                     possible.append(move[i]["ename"])
     print(f"{search} can do the following moves: {possible}")
-abilities()
+abilities() """
