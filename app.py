@@ -12,7 +12,7 @@ data = json.load(pokedex)
 
 # Add a language choice feature and print the pokemons name based on the user input
 
-choose = input("Which language would you like to print? ENG / JAP / CHI / FRE ").lower()
+""" choose = input("Which language would you like to print? ENG / JAP / CHI / FRE ").lower()
 for i in range(len(data)):
     if choose == "eng":
         print(data[i]['name']['english'])
@@ -23,7 +23,7 @@ for i in range(len(data)):
     elif choose == "fre":
         print(data[i]['name']['french'])
     else:
-        print("Unaccepted language")
+        print("Unaccepted language") """
 
 # Develop a function that creates a new list of pokemon based on the type the user searched for. If no pokemon was found of that type inform the user
 
@@ -58,7 +58,7 @@ name()  """
 moves = open('./moves.json', encoding="utf8")
 move = json.load(moves)
 
-""" def abilities():
+def abilities():
     possible = []
     search = input("Enter a pokemon (In English): ").title()
     for i in range(len(data)):
@@ -69,4 +69,4 @@ move = json.load(moves)
                 if move[i]["type"] in data[match]['type']:
                     possible.append(move[i]["ename"])
     print(f"{search} can do the following moves: {possible}")
-abilities() """
+abilities()
